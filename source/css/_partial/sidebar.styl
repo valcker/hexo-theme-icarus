@@ -1,3 +1,61 @@
+#info
+  margin-top: 40px
+  background: #fff
+  border: 1px solid #eceff2
+  .article-info
+    clearfix()
+    padding: 0px
+    .article-info-block
+      width: 50%
+      padding: 20px 15px
+      font-size: 20px
+      text-align: center
+      box-sizing: border-box
+      float: left
+      border-bottom: 1px solid #eceff2
+      span
+        display: block
+        font-size: font-size
+      &:first-child
+        border-right: 1px solid color-border
+  .contact-info
+    .contact-list
+      width: 100%
+      td
+        text-align: center
+        font-size: font-size + 10px
+        a
+          position: relative
+          transition: 0.2s ease
+          color: color-default + #333
+          &:hover
+            color: color-default
+            &:after
+              right: -50%
+              top: -41px
+              color: white
+              background: #333
+              font-size: 14px
+              content: attr(title)
+              display: block
+              padding: 5px 15px
+              position: absolute
+              white-space: nowrap
+              border-radius: 2px
+              text-transform: uppercase
+              box-shadow: 0 0 2px rgba(0, 0, 0, 0.2)
+              z-index: 1
+            &:before
+              top: -12px
+              right: 8px
+              border: solid
+              border-color: #333 transparent
+              border-width: 5px 5px 0 5px
+              content: ""
+              display: block
+              position: absolute
+              z-index: 2
+
 #sidebar
   @media mq-normal
     column(sidebar-column)
